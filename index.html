@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARISEL OS v2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ══ NAVİGASYON ══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">ARISEL</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-version">v2.0</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#timeline">Yolculuk</a></li>
+                <li><a href="#now">Şimdi</a></li>
+                <li><a href="#languages">Diller</a></li>
+                <li><a href="#vision">Vizyon 2030</a></li>
+                <li><a href="#manual">Kılavuz</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Karanlık/aydınlık modu değiştir">
+                    <span class="theme-icon">☀️</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══ HERO ══ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="particles" id="particles"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="boot-sequence" id="bootSequence">
+                <div class="boot-text">
+                    <span class="boot-line"><span class="boot-prompt">›</span> ARISEL OS v2.0 başlatılıyor...</span>
+                    <span class="boot-line"><span class="boot-prompt">›</span> Kişilik modülleri yükleniyor... <span class="boot-ok">[TAMAM]</span></span>
+                    <span class="boot-line"><span class="boot-prompt">›</span> Dil paketleri bağlanıyor (4/5)... <span class="boot-ok">[TAMAM]</span></span>
+                    <span class="boot-line"><span class="boot-prompt">›</span> Hayal motoru başlatılıyor... <span class="boot-ok">[TAMAM]</span></span>
+                    <span class="boot-line"><span class="boot-prompt">›</span> Sistem hazır. <span class="blink-cursor">█</span></span>
+                </div>
+            </div>
+
+            <div class="hero-main" id="heroMain">
+                <div class="profile-frame">
+                    <div class="profile-placeholder">
+                        <div class="avatar-initials">AR</div>
+                    </div>
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>Çevrimiçi · Türkiye</span>
+                    </div>
+                </div>
+
+                <div class="hero-text">
+                    <div class="hero-label">
+                        <span class="terminal-prompt">~/arisel$</span>
+                        <span id="typingText"></span><span class="blink-cursor">█</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-tag">&lt;</span>ARISEL OS<span class="title-tag">/&gt;</span>
+                        <span class="version-badge">v2.0</span>
+                    </h1>
+                    <div class="hero-roles">
+                        <div class="role-chip">
+                            <span class="role-dot"></span>
+                            Bilgisayar Mühendisliği Öğrencisi
+                        </div>
+                        <div class="role-chip">
+                            <span class="role-dot secondary"></span>
+                            Orhun Değişim Programı Öğrencisi
+                        </div>
+                        <div class="role-chip">
+                            <span class="role-dot accent"></span>
+                            Gelecekteki Full Stack + AI Geliştirici
+                        </div>
+                    </div>
+                    <p class="hero-tagline">
+                        Geleceği inşa ediyorum, bir commit'te bir adım.<br>
+                        Şu an <span class="highlight">Türkiye</span>'deyim — merak ve kahveyle dolu.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#now" class="btn btn-primary">
+                            <span>Şu An Ne Yapıyorum</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">İletişime Geç</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Kaydır</span>
+        </div>
+    </section>
+
+    <!-- ══ HAKKIMDA ══ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">sistem.bilgi</span>
+                <h2 class="section-title">Hakkımda</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass-card reveal">
+                    <p class="about-intro">
+                        Merhaba! Ben <strong>Asel</strong>, sınırları ve teknolojileri aşan heyecan verici bir yolculukta olan bir Bilgisayar Mühendisliği öğrencisiyim.
+                        Orhun Değişim Programı kapsamında şu an <span class="highlight">Türkiye</span>'deyim ve Full Stack + AI geliştirici olmak için yolumu çiziyorum.
+                    </p>
+                    <p class="about-body">
+                        Yaparak öğrenmeye, dünyayı keşfetmeye ve kültürleri kod aracılığıyla birbirine bağlamaya inanıyorum.
+                        Kırgızistan'ın dağlarından Türkiye'nin canlı teknoloji sahnesine — her deneyim vizyonumu şekillendiriyor.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Dil</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Ülke</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Merak</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">☕</span>
+                            <span class="stat-label">Kahve/Gün</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="os-window glass-card">
+                        <div class="window-titlebar">
+                            <span class="win-dot red"></span>
+                            <span class="win-dot yellow"></span>
+                            <span class="win-dot green"></span>
+                            <span class="window-title">asel.profil</span>
+                        </div>
+                        <div class="window-body">
+                            <div class="code-line"><span class="ck">isim</span><span class="ceq">:</span> <span class="cv">"Asel Kou"</span></div>
+                            <div class="code-line"><span class="ck">rol</span><span class="ceq">:</span> <span class="cv">"Mühendislik Öğrencisi"</span></div>
+                            <div class="code-line"><span class="ck">konum</span><span class="ceq">:</span> <span class="cv">"Türkiye 🇹🇷"</span></div>
+                            <div class="code-line"><span class="ck">köken</span><span class="ceq">:</span> <span class="cv">"Kırgızistan 🇰🇬"</span></div>
+                            <div class="code-line"><span class="ck">program</span><span class="ceq">:</span> <span class="cv">"Orhun Değişim"</span></div>
+                            <div class="code-line"><span class="ck">hedef</span><span class="ceq">:</span> <span class="cv">"Full Stack + AI"</span></div>
+                            <div class="code-line"><span class="ck">durum</span><span class="ceq">:</span> <span class="cv cv-green">"müsait"</span></div>
+                            <div class="code-line"><span class="ck">kahve</span><span class="ceq">:</span> <span class="cv">"zorunlu: true"</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ HAYAT YOLCULUĞU ══ -->
+    <section class="section section-alt" id="timeline">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">sistem.kayitlari</span>
+                <h2 class="section-title">Hayat Yolculuğum</h2>
+                <p class="section-subtitle">Buraya gelen yol</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-track"></div>
+
+                <div class="timeline-item reveal" data-side="left">
+                    <div class="timeline-content glass-card">
+                        <div class="t-icon">🏔️</div>
+                        <h3>Kırgızistan</h3>
+                        <p>Anavatanım. Orta Asya'nın dağları ve gelenekleri arasında merakın doğduğu yer. Her şeyimin temeli.</p>
+                        <span class="t-badge origin">Köken</span>
+                    </div>
+                    <div class="timeline-node"><div class="node-ring"></div><div class="node-core"></div></div>
+                </div>
+
+                <div class="timeline-item reveal" data-side="right">
+                    <div class="timeline-content glass-card">
+                        <div class="t-icon">🎓</div>
+                        <h3>Üniversite</h3>
+                        <p>Bilgisayar Mühendisliği — algoritmaların sanata, problem çözmenin ise bir yaşam biçimine dönüştüğü yer.</p>
+                        <span class="t-badge edu">Eğitim</span>
+                    </div>
+                    <div class="timeline-node"><div class="node-ring"></div><div class="node-core"></div></div>
+                </div>
+
+                <div class="timeline-item reveal" data-side="left">
+                    <div class="timeline-content glass-card">
+                        <div class="t-icon">✈️</div>
+                        <h3>Orhun Değişim Programı</h3>
+                        <p>Türk dünyası öğrencilerini bir araya getiren prestijli programa seçildim. Yeni ufuklar açan, hayat değiştiren bir fırsat.</p>
+                        <span class="t-badge exchange">Değişim</span>
+                    </div>
+                    <div class="timeline-node"><div class="node-ring"></div><div class="node-core"></div></div>
+                </div>
+
+                <div class="timeline-item reveal" data-side="right">
+                    <div class="timeline-content glass-card">
+                        <div class="t-icon">🌙</div>
+                        <h3>Türkiye</h3>
+                        <p>Şu an buradayım! Yeni kültür, yeni dil, yeni bakış açıları. Her yönden büyüyorum.</p>
+                        <span class="t-badge current">◉ Şu An</span>
+                    </div>
+                    <div class="timeline-node active"><div class="node-ring"></div><div class="node-core"></div></div>
+                </div>
+
+                <div class="timeline-item reveal" data-side="left">
+                    <div class="timeline-content glass-card">
+                        <div class="t-icon">💻</div>
+                        <h3>Yazılım Geliştirme</h3>
+                        <p>Gerçek dünya projeleri inşa ediyorum, açık kaynağa katkı sağlıyorum ve fikirleri çalışan koda dönüştürüyorum.</p>
+                        <span class="t-badge growth">Büyüme</span>
+                    </div>
+                    <div class="timeline-node future"><div class="node-ring"></div><div class="node-core"></div></div>
+                </div>
+
+                <div class="timeline-item reveal" data-side="right">
+                    <div class="timeline-content glass-card future-card">
+                        <div class="t-icon">🚀</div>
+                        <h3>Full Stack + AI</h3>
+                        <p>Hedef bu. Kültürleri birbirine bağlayan ve gerçek etki yaratan akıllı uygulamalar geliştirmek.</p>
+                        <span class="t-badge future">Gelecek</span>
+                    </div>
+                    <div class="timeline-node future"><div class="node-ring"></div><div class="node-core"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GÜNCEL DURUM ══ -->
+    <section class="section" id="now">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">sistem.durum</span>
+                <h2 class="section-title">Güncel Durum</h2>
+                <p class="section-subtitle">Şu an ne yapıyorum — Haziran 2026 itibarıyla güncellendi</p>
+            </div>
+            <div class="now-bento">
+                <!-- Büyük kart — sol, 2 satır kaplar -->
+                <div class="now-card now-big glass-card reveal">
+                    <span class="now-icon">📚</span>
+                    <h3>Neler Öğreniyorum</h3>
+                    <ul class="now-list">
+                        <li>React ve Next.js temelleri</li>
+                        <li>AI/ML için Python</li>
+                        <li>Veri Yapıları ve Algoritmalar</li>
+                        <li>İngilizce — aktif geliştirme</li>
+                        <li>REST API tasarım kalıpları</li>
+                    </ul>
+                </div>
+                <!-- Sağ üst kart -->
+                <div class="now-card glass-card reveal">
+                    <span class="now-icon">⚡</span>
+                    <h3>Neler Üzerinde Çalışıyorum</h3>
+                    <ul class="now-list">
+                        <li>JavaScript / TypeScript projeleri</li>
+                        <li>Kişisel portföy projeleri</li>
+                        <li>Üniversite dersleri</li>
+                        <li>Bu web sitesi ✨</li>
+                        <li>Yan projeler geliştirmek</li>
+                    </ul>
+                </div>
+                <!-- Sağ alt kart -->
+                <div class="now-card glass-card reveal">
+                    <span class="now-icon">📈</span>
+                    <h3>Geliştirdiğim Beceriler</h3>
+                    <ul class="now-list">
+                        <li>JavaScript / TypeScript (aktif kullanım)</li>
+                        <li>Türkçe — günlük iletişim</li>
+                        <li>Problem çözme (LeetCode)</li>
+                        <li>Sistem tasarımı düşüncesi</li>
+                        <li>Fotoğraf kompozisyonu</li>
+                    </ul>
+                </div>
+                <!-- Geniş kart — tam genişlik -->
+                <div class="now-card now-wide glass-card reveal">
+                    <span class="now-icon">🎯</span>
+                    <h3>Mevcut Hedeflerim</h3>
+                    <ul class="now-list">
+                        <li>Orhun Programını başarıyla tamamlamak</li>
+                        <li>3 full-stack proje geliştirmek</li>
+                        <li>Türkçemi daha da ilerletmek</li>
+                        <li>İngilizce seviyemi yükseltmek</li>
+                        <li>İlk staj pozisyonunu kazanmak</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ DİL MODÜLLERİ ══ -->
+    <section class="section section-alt" id="languages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">dil.modülleri</span>
+                <h2 class="section-title">Dil Modülleri</h2>
+                <p class="section-subtitle">Kurulu iletişim protokolleri</p>
+            </div>
+            <div class="languages-wrapper reveal">
+                <div class="language-item">
+                    <div class="lang-meta">
+                        <span class="lang-flag">🇰🇬</span>
+                        <div class="lang-details">
+                            <span class="lang-name">Kırgızca</span>
+                            <span class="lang-level">Ana Dil</span>
+                        </div>
+                    </div>
+                    <div class="lang-bar-wrap">
+                        <div class="lang-bar"><div class="lang-fill" data-width="100"></div></div>
+                        <span class="lang-pct">100%</span>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="lang-meta">
+                        <span class="lang-flag">🇷🇺</span>
+                        <div class="lang-details">
+                            <span class="lang-name">Rusça</span>
+                            <span class="lang-level">Akıcı</span>
+                        </div>
+                    </div>
+                    <div class="lang-bar-wrap">
+                        <div class="lang-bar"><div class="lang-fill" data-width="90"></div></div>
+                        <span class="lang-pct">90%</span>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="lang-meta">
+                        <span class="lang-flag">🇹🇷</span>
+                        <div class="lang-details">
+                            <span class="lang-name">Türkçe</span>
+                            <span class="lang-level">İleri Düzey</span>
+                        </div>
+                    </div>
+                    <div class="lang-bar-wrap">
+                        <div class="lang-bar"><div class="lang-fill" data-width="85"></div></div>
+                        <span class="lang-pct">85%</span>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="lang-meta">
+                        <span class="lang-flag">🇬🇧</span>
+                        <div class="lang-details">
+                            <span class="lang-name">İngilizce</span>
+                            <span class="lang-level">Yetkin</span>
+                        </div>
+                    </div>
+                    <div class="lang-bar-wrap">
+                        <div class="lang-bar"><div class="lang-fill" data-width="78"></div></div>
+                        <span class="lang-pct">78%</span>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="lang-meta">
+                        <span class="lang-flag">🇩🇪</span>
+                        <div class="lang-details">
+                            <span class="lang-name">Almanca</span>
+                            <span class="lang-level">Orta Düzey</span>
+                        </div>
+                    </div>
+                    <div class="lang-bar-wrap">
+                        <div class="lang-bar"><div class="lang-fill" data-width="45"></div></div>
+                        <span class="lang-pct">45%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SEYAHATLER ══ -->
+    <section class="section" id="travels">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">dünya.haritası</span>
+                <h2 class="section-title">Seyahatler</h2>
+                <p class="section-subtitle">Beni şekillendiren yerler</p>
+            </div>
+            <div class="travel-count-badge reveal">
+                <span class="tc-number">7+</span>
+                <span class="tc-text">ülke gezildi</span>
+            </div>
+            <div class="travel-grid travel-grid-wide">
+                <div class="travel-card reveal">
+                    <div class="travel-visual" style="--c1:#4f1b7a;--c2:#1a0a3d;">
+                        <div class="travel-emoji">🏔️</div>
+                        <div class="travel-hover-info"><h3>Kırgızistan</h3><p>Ev ve Yürek</p></div>
+                    </div>
+                    <div class="travel-footer">
+                        <span class="travel-flag">🇰🇬</span>
+                        <span class="travel-name">Kırgızistan</span>
+                        <span class="travel-badge home">Ev</span>
+                    </div>
+                </div>
+                <div class="travel-card reveal">
+                    <div class="travel-visual" style="--c1:#7a1a1a;--c2:#3d0a0a;">
+                        <div class="travel-emoji">🕌</div>
+                        <div class="travel-hover-info"><h3>Türkiye</h3><p>Şu Anki Konum</p></div>
+                    </div>
+                    <div class="travel-footer">
+                        <span class="travel-flag">🇹🇷</span>
+                        <span class="travel-name">Türkiye</span>
+                        <span class="travel-badge current">Şu An</span>
+                    </div>
+                </div>
+                <div class="travel-card reveal">
+                    <div class="travel-visual" style="--c1:#1a2e5a;--c2:#0d1a36;">
+                        <div class="travel-emoji">🏰</div>
+                        <div class="travel-hover-info"><h3>Almanya</h3><p>Gezildi</p></div>
+                    </div>
+                    <div class="travel-footer">
+                        <span class="travel-flag">🇩🇪</span>
+                        <span class="travel-name">Almanya</span>
+                        <span class="travel-badge visited">Gezildi</span>
+                    </div>
+                </div>
+                <div class="travel-card reveal">
+                    <div class="travel-visual" style="--c1:#5a2a0d;--c2:#311608;">
+                        <div class="travel-emoji">🏯</div>
+                        <div class="travel-hover-info"><h3>Çekya</h3><p>Gezildi</p></div>
+                    </div>
+                    <div class="travel-footer">
+                        <span class="travel-flag">🇨🇿</span>
+                        <span class="travel-name">Çekya</span>
+                        <span class="travel-badge visited">Gezildi</span>
+                    </div>
+                </div>
+                <div class="travel-card reveal">
+                    <div class="travel-visual" style="--c1:#6b1a1a;--c2:#380e0e;">
+                        <div class="travel-emoji">🦅</div>
+                        <div class="travel-hover-info"><h3>Polonya</h3><p>Gezildi</p></div>
+                    </div>
+                    <div class="travel-footer">
+                        <span class="travel-flag">🇵🇱</span>
+                        <span class="travel-name">Polonya</span>
+                        <span class="travel-badge visited">Gezildi</span>
+                    </div>
+                </div>
+                <div class="travel-card reveal">
+                    <div class="travel-visual" style="--c1:#0d3d1e;--c2:#07210f;">
+                        <div class="travel-emoji">⛰️</div>
+                        <div class="travel-hover-info"><h3>İsviçre</h3><p>Gezildi</p></div>
+                    </div>
+                    <div class="travel-footer">
+                        <span class="travel-flag">🇨🇭</span>
+                        <span class="travel-name">İsviçre</span>
+                        <span class="travel-badge visited">Gezildi</span>
+                    </div>
+                </div>
+                <div class="travel-card reveal">
+                    <div class="travel-visual" style="--c1:#0d2a6b;--c2:#071540;">
+                        <div class="travel-emoji">🗼</div>
+                        <div class="travel-hover-info"><h3>Fransa</h3><p>Gezildi</p></div>
+                    </div>
+                    <div class="travel-footer">
+                        <span class="travel-flag">🇫🇷</span>
+                        <span class="travel-name">Fransa</span>
+                        <span class="travel-badge visited">Gezildi</span>
+                    </div>
+                </div>
+                <div class="travel-card reveal">
+                    <div class="travel-visual" style="--c1:#2a1a5a;--c2:#150d31;">
+                        <div class="travel-emoji">🗺️</div>
+                        <div class="travel-hover-info"><h3>Sonraki Durak</h3><p>Yakında...</p></div>
+                    </div>
+                    <div class="travel-footer">
+                        <span class="travel-flag">✈️</span>
+                        <span class="travel-name">Sonraki Durak...</span>
+                        <span class="travel-badge planned">Planlanan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ ORTAM VE İLHAM ══ -->
+    <section class="section section-alt" id="inspiration">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">temel.değerler</span>
+                <h2 class="section-title">Ortam &amp; İlham</h2>
+                <p class="section-subtitle">Bu sistemi besleyen şeyler</p>
+            </div>
+            <div class="inspiration-grid">
+                <div class="insp-card glass-card reveal">
+                    <div class="insp-icon-wrap">💻</div>
+                    <h3>Teknoloji</h3>
+                    <p>Daha önce var olmayan şeyler üretmek. Fikirleri kod aracılığıyla gerçeğe dönüştürmenin verdiği o özel duygu.</p>
+                    <div class="insp-tags"><span>AI/ML</span><span>Web Geliştirme</span><span>Açık Kaynak</span></div>
+                </div>
+                <div class="insp-card glass-card reveal">
+                    <div class="insp-icon-wrap">📖</div>
+                    <h3>Kitaplar</h3>
+                    <p>Teknoloji kitapları, kişisel gelişim ve farklı kültürlerin hikayeleri. Bilgi, en iyi seyahat arkadaşıdır.</p>
+                    <div class="insp-tags"><span>Teknoloji</span><span>Felsefe</span><span>Biyografi</span></div>
+                </div>
+                <div class="insp-card glass-card reveal">
+                    <div class="insp-icon-wrap">✈️</div>
+                    <h3>Seyahat</h3>
+                    <p>Her yeni yer beyni yeniden şekillendirir. Kültürel derinleşme, en üst düzey öğrenme deneyimidir.</p>
+                    <div class="insp-tags"><span>Kültür</span><span>Keşif</span><span>Büyüme</span></div>
+                </div>
+                <div class="insp-card glass-card reveal">
+                    <div class="insp-icon-wrap">👨‍👩‍👧</div>
+                    <h3>Aile</h3>
+                    <p>Köklerim ve nedenim. Ben kendime inanmadan önce onlar bana inandı. Ev her zaman Kırgızistan.</p>
+                    <div class="insp-tags"><span>Yuva</span><span>Destek</span><span>Sevgi</span></div>
+                </div>
+                <div class="insp-card glass-card reveal">
+                    <div class="insp-icon-wrap">🤝</div>
+                    <h3>Arkadaşlar</h3>
+                    <p>Ülkeler ve kültürler arasında bulunanlar. Her yeni macerayla büyümeye devam eden küresel ağ.</p>
+                    <div class="insp-tags"><span>Uluslararası</span><span>Topluluk</span><span>Bağ</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ AKTİF YAŞAM ══ -->
+    <section class="section" id="lifestyle">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">sağlık.süreci</span>
+                <h2 class="section-title">Aktif Yaşam</h2>
+                <p class="section-subtitle">Ekranın ötesinde</p>
+            </div>
+            <div class="lifestyle-grid">
+                <div class="life-card glass-card reveal">
+                    <div class="life-emoji">🚶‍♀️</div>
+                    <h3>Yürüyüş</h3>
+                    <p>Günlük yürüyüşler zihni açar ve en iyi fikirleri doğurur. En iyi hata ayıklama yürürken yapılır.</p>
+                    <div class="life-meter">
+                        <span class="dot filled"></span><span class="dot filled"></span>
+                        <span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+                    </div>
+                </div>
+                <div class="life-card glass-card reveal">
+                    <div class="life-emoji">🗺️</div>
+                    <h3>Yeni Yerler Keşfetmek</h3>
+                    <p>Her mahallenin bir hikayesi vardır. Kasıtlı olarak kaybolmak, keşiflerin gerçekleştiği andır.</p>
+                    <div class="life-meter">
+                        <span class="dot filled"></span><span class="dot filled"></span>
+                        <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                    </div>
+                </div>
+                <div class="life-card glass-card reveal">
+                    <div class="life-emoji">📸</div>
+                    <h3>Fotoğrafçılık</h3>
+                    <p>Anları, ışığı ve sıradan şeylerin güzelliğini yakalamak. Her kare bir hikaye anlatır.</p>
+                    <div class="life-meter">
+                        <span class="dot filled"></span><span class="dot filled"></span>
+                        <span class="dot filled"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
+                </div>
+                <div class="life-card glass-card reveal">
+                    <div class="life-emoji">🌿</div>
+                    <h3>Açık Hava Aktiviteleri</h3>
+                    <p>Doğa yürüyüşleri, parklar, doğa — dijital dünyanın dışındaki gerçeklikle yeniden bağlantı kurmak.</p>
+                    <div class="life-meter">
+                        <span class="dot filled"></span><span class="dot filled"></span>
+                        <span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GELECEK VİZYONU 2030 ══ -->
+    <section class="section section-alt" id="vision">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">gelecek.yol.haritası</span>
+                <h2 class="section-title">Gelecek Vizyonu 2030</h2>
+                <p class="section-subtitle">Önümüzdeki yol haritası</p>
+            </div>
+            <div class="roadmap">
+                <div class="roadmap-spine"></div>
+
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node"><span class="rn-icon">🔥</span></div>
+                        <span class="rn-year">2026</span>
+                    </div>
+                    <div class="roadmap-card glass-card">
+                        <h3>Full Stack Geliştirici</h3>
+                        <p>React, Node.js ve veritabanlarını öğrenmek. Sıfırdan üretime kadar tam web uygulamaları geliştirmek.</p>
+                        <div class="roadmap-chips">
+                            <span class="chip done">✓ HTML/CSS/JS</span>
+                            <span class="chip">→ React/Next.js</span>
+                            <span class="chip">→ Backend API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node"><span class="rn-icon">🤖</span></div>
+                        <span class="rn-year">2027</span>
+                    </div>
+                    <div class="roadmap-card glass-card">
+                        <h3>AI Projeleri</h3>
+                        <p>Yapay zeka destekli uygulamalar geliştirmek. Mühendislik becerilerini makine öğrenmesi modelleriyle birleştirmek.</p>
+                        <div class="roadmap-chips">
+                            <span class="chip">→ Python/ML</span>
+                            <span class="chip">→ LLM API'leri</span>
+                            <span class="chip">→ AI Ürünleri</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node"><span class="rn-icon">🌍</span></div>
+                        <span class="rn-year">2028</span>
+                    </div>
+                    <div class="roadmap-card glass-card">
+                        <h3>Uluslararası Kariyer</h3>
+                        <p>Küresel ekiplerle çalışmak. Teknoloji çözümlerine çok kültürlü bir bakış açısı katmak.</p>
+                        <div class="roadmap-chips">
+                            <span class="chip">→ Uluslararası İş</span>
+                            <span class="chip">→ Uzaktan Çalışma</span>
+                            <span class="chip">→ Küresel Etki</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node"><span class="rn-icon">📚</span></div>
+                        <span class="rn-year">2029</span>
+                    </div>
+                    <div class="roadmap-card glass-card">
+                        <h3>Sürekli Öğrenme</h3>
+                        <p>Almanca'yı öğrenmek. Yeni teknolojileri keşfetmek. Belki bir yüksek lisans derecesi?</p>
+                        <div class="roadmap-chips">
+                            <span class="chip">→ Almanca C1</span>
+                            <span class="chip">→ Yüksek Lisans?</span>
+                            <span class="chip">→ Sertifikalar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node glow-node"><span class="rn-icon">✨</span></div>
+                        <span class="rn-year">2030</span>
+                    </div>
+                    <div class="roadmap-card glass-card vision-final">
+                        <h3>Seyahat Hedefleri &amp; Hayal Hayatı</h3>
+                        <p>10'dan fazla ülke gezmek. Farklı şehirlerden çalışmak. Anlamlı projeler üretmek ve her yerde insanlarla bağ kurmak.</p>
+                        <div class="roadmap-chips">
+                            <span class="chip">→ Avrupa Turu</span>
+                            <span class="chip">→ Asya Gezisi</span>
+                            <span class="chip">→ Hayal Gerçek ✨</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ KULLANIM KILAVUZU ══ -->
+    <section class="section" id="manual">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">kullanici.kilavuzu</span>
+                <h2 class="section-title">Kullanım Kılavuzu</h2>
+                <p class="section-subtitle">Bu ünitenin çalıştırılmasına ilişkin önemli uyarılar ve sorumluluk reddi beyanları</p>
+            </div>
+            <div class="manual-wrapper">
+                <div class="manual-intro glass-card reveal">
+                    <div class="manual-logo-text">⚠️ ARISEL OS v2.0 — Resmi Dokümantasyon</div>
+                    <p>Bu ünitenin çalıştırılmadan önce aşağıdaki önemli güvenlik bildirimlerinin dikkatlice okunması gerekmektedir. Üretici, aşırı uzun sohbetlerden kaynaklanan durumlardan sorumlu tutulamaz.</p>
+                </div>
+                <div class="accordion reveal">
+                    <div class="acc-item glass-card">
+                        <button class="acc-trigger" aria-expanded="false">
+                            <span class="acc-icon">☕</span>
+                            <span class="acc-title">Kahvesiz çalıştırılması önerilmez</span>
+                            <span class="acc-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
+                        </button>
+                        <div class="acc-body">
+                            <p>Bu ünite sabah rutinini tamamlamadan ve tercihen bir fincan kahve alınmadan önce çalıştırılmamalıdır. Kahvesiz başlatma girişimleri düşük performans, sınırlı yanıt süresi ve genel moral düşüklüğüne yol açabilir. <em>Side effects: slow boot, reduced creativity output, Pazartesi hakkında varoluşsal düşünceler.</em></p>
+                        </div>
+                    </div>
+                    <div class="acc-item glass-card">
+                        <button class="acc-trigger" aria-expanded="false">
+                            <span class="acc-icon">🔬</span>
+                            <span class="acc-title">Yeni teknolojilere karşı aşırı merak gözlemlenmiştir</span>
+                            <span class="acc-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
+                        </button>
+                        <div class="acc-body">
+                            <p>Bu sistemde yeni teknolojiler, framework'ler ve programlama dillerine karşı aşırı merak henüz gözlemlenmeye başlanmıştır. Süreç gelişmekte olup merak düzeyinin zaman içinde kritik seviyelere ulaşması beklenmektedir. Şu an başlangıç aşamasında olmakla birlikte potansiyel yüksek görünmektedir. <em>Durum: erken aşama. Büyüme tahmini: sınırsız.</em></p>
+                        </div>
+                    </div>
+                    <div class="acc-item glass-card">
+                        <button class="acc-trigger" aria-expanded="false">
+                            <span class="acc-icon">✈️</span>
+                            <span class="acc-title">Seyahat planları konuşulursa sistem uzun süre kapanmayabilir</span>
+                            <span class="acc-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
+                        </button>
+                        <div class="acc-body">
+                            <p>Seyahat rotaları, yeni şehirler veya keşfedilecek yerler konu edildiğinde bu ünite otomatik olarak "planlama modu"na geçmektedir. Bu durum görüşmenin beklenmedik biçimde uzamasına ve çok sayıda Google Maps sekmesinin açılmasına neden olabilir. <em>Tahmini uyku süresi: tanımsız. Google Maps sekme sayısı: ∞</em></p>
+                        </div>
+                    </div>
+                    <div class="acc-item glass-card">
+                        <button class="acc-trigger" aria-expanded="false">
+                            <span class="acc-icon">🤖</span>
+                            <span class="acc-title">Yapay zeka konuları açılırsa detaylı açıklamalar başlayabilir</span>
+                            <span class="acc-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
+                        </button>
+                        <div class="acc-body">
+                            <p>Yapay zeka, makine öğrenmesi veya büyük dil modelleri gibi konular gündeme geldiğinde bu sistem otomatik olarak "ders moduna" geçebilmektedir. Dinleyici hazır bulunmakta olup kapsamlı anlatım başlayabilir. <em>Çıktı token sınırı: tespit edilemedi. Gerekli dinleyici sabrı: yüksek.</em></p>
+                        </div>
+                    </div>
+                    <div class="acc-item glass-card">
+                        <button class="acc-trigger" aria-expanded="false">
+                            <span class="acc-icon">📉</span>
+                            <span class="acc-title">Sınav haftasında performans geçici olarak düşebilir</span>
+                            <span class="acc-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
+                        </button>
+                        <div class="acc-body">
+                            <p>Sınav dönemlerinde bu ünitenin sosyal ağ aktivitesi, yanıt süresi ve genel ruh hali önemli ölçüde değişim gösterebilir. Bu durum normal sayılmakta olup sınav döneminin ardından sistem otomatik olarak eski haline dönmektedir. <em>Tahmini iyileşme süresi: sınav sonrası 24-48 saat. Yan etkiler arasında aşırı atıştırma görülebilir.</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GALERİ ══ -->
+    <section class="section section-alt" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">bellek.bankası</span>
+                <h2 class="section-title">Galeri</h2>
+                <p class="section-subtitle">Yolculuğun anlık görüntüleri — gerçek fotoğraflar yakında gelecek</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal" style="--d:0ms">
+                    <div class="gallery-ph" style="--gc1:#2d1060;--gc2:#130830;">
+                        <span class="gallery-em">🏔️</span>
+                        <span class="gallery-cap">Kırgızistan Dağları</span>
+                    </div>
+                </div>
+                <div class="gallery-item tall reveal" style="--d:100ms">
+                    <div class="gallery-ph" style="--gc1:#0d3b6e;--gc2:#071c33;">
+                        <span class="gallery-em">🌃</span>
+                        <span class="gallery-cap">Şehir Geceleri</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" style="--d:200ms">
+                    <div class="gallery-ph" style="--gc1:#6e0d0d;--gc2:#330707;">
+                        <span class="gallery-em">🕌</span>
+                        <span class="gallery-cap">Türk Mimarisi</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" style="--d:300ms">
+                    <div class="gallery-ph" style="--gc1:#0d4a2e;--gc2:#072215;">
+                        <span class="gallery-em">💻</span>
+                        <span class="gallery-cap">Kodlama Seansları</span>
+                    </div>
+                </div>
+                <div class="gallery-item tall reveal" style="--d:400ms">
+                    <div class="gallery-ph" style="--gc1:#4a3d0d;--gc2:#221c07;">
+                        <span class="gallery-em">🌅</span>
+                        <span class="gallery-cap">Gün Doğumu Maceraları</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" style="--d:500ms">
+                    <div class="gallery-ph" style="--gc1:#3d0d4a;--gc2:#1c0722;">
+                        <span class="gallery-em">📸</span>
+                        <span class="gallery-cap">Fotoğraf Anları</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ İLETİŞİM ══ -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">bağlantı.başlat</span>
+                <h2 class="section-title">İletişime Geç</h2>
+                <p class="section-subtitle">Birlikte bir şeyler üretelim</p>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-terminal glass-card reveal">
+                    <div class="term-bar">
+                        <span class="t-dot red"></span>
+                        <span class="t-dot yellow"></span>
+                        <span class="t-dot green"></span>
+                        <span class="term-title">arisel@bağlantı ~ bash</span>
+                    </div>
+                    <div class="term-body">
+                        <p><span class="tp">$</span> ping aselkou --mesaj "merhaba"</p>
+                        <p class="to">PING aselkou (insan.port:443) — bağlandı.</p>
+                        <p class="to">Yanıt: İş birliği ve staj fırsatlarına açığım!</p>
+                        <p class="to">Yanıt: AI, web geliştirme veya dünyayı keşfetmek için konuşalım.</p>
+                        <p class="to">Yanıt: Yanıt süresi ~24 saat. Bot yok — sadece benim 🙂</p>
+                        <p><span class="tp">$</span> <span class="blink-cursor">█</span></p>
+                    </div>
+                </div>
+                <div class="contact-links reveal">
+                    <a href="https://instagram.com/ar1pzhanovaas_" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+                        <div class="cc-icon instagram">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </div>
+                        <div class="cc-info"><h3>Instagram</h3><span>@ar1pzhanovaas_</span></div>
+                        <span class="cc-arrow">→</span>
+                    </a>
+                    <a href="https://github.com/Asel1305" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+                        <div class="cc-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <div class="cc-info"><h3>GitHub</h3><span>@Asel1305</span></div>
+                        <span class="cc-arrow">→</span>
+                    </a>
+                    <a href="https://linkedin.com/in/asel-aripzhanova" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+                        <div class="cc-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </div>
+                        <div class="cc-info"><h3>LinkedIn</h3><span>Asel Aripzhanova</span></div>
+                        <span class="cc-arrow">→</span>
+                    </a>
+                    <a href="mailto:aselaripzhnova@gmail.com" class="contact-card glass-card">
+                        <div class="cc-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="cc-info"><h3>E-posta</h3><span>aselaripzhnova@gmail.com</span></div>
+                        <span class="cc-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-bracket">[</span>
+                    <span>ARISEL OS v2.0</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-tagline">Merak, kahvesiz geçmeyen sabahlar ve çok fazla CSS ile inşa edildi.</p>
+                <div class="footer-meta">
+                    <span>© 2026 Asel Aripzhanova</span>
+                    <span class="sep">·</span>
+                    <span>Türkiye'de ❤️ ile yapıldı</span>
+                    <span class="sep">·</span>
+                    <span>Sürüm 2.0.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
