@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyahatlerim · ARISEL OS v2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ══ NAVİGASYON ══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">ARISEL</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-version">v2.0</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#about">Hakkımda</a></li>
+                <li><a href="index.html#now">Şimdi</a></li>
+                <li><a href="travels.html">Seyahatler</a></li>
+                <li><a href="dreams.html">Hayaller</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="vision2030.html">Vizyon 2030</a></li>
+                <li><a href="index.html#contact">İletişim</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+                    <span class="theme-icon">☀️</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══ SAYFA HERO ══ -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Ana Sayfa</a>
+                <span class="bc-sep">/</span>
+                <span class="bc-cur">Seyahatler</span>
+            </div>
+            <span class="page-hero-tag">dünya.haritası</span>
+            <h1 class="page-hero-title">Seyahatlerim</h1>
+            <p class="page-hero-subtitle">
+                Her yeni yer, yeni bir bakış açısı. 7'den fazla ülke, 2 kıta —
+                ve her biri beni biraz daha <span class="highlight">ben</span> yapan anılar.
+            </p>
+        </div>
+    </section>
+
+    <!-- ══ HIZLI İSTATİSTİKLER ══ -->
+    <div class="container">
+        <div class="quick-stats reveal">
+            <div class="quick-stat">
+                <span class="qs-number">7+</span>
+                <span class="qs-label">Gezilen Ülke</span>
+            </div>
+            <div class="quick-stat">
+                <span class="qs-number">2</span>
+                <span class="qs-label">Kıta (Asya &amp; Avrupa)</span>
+            </div>
+            <div class="quick-stat">
+                <span class="qs-number">∞</span>
+                <span class="qs-label">Kazanılan Anı</span>
+            </div>
+            <div class="quick-stat">
+                <span class="qs-number">+1</span>
+                <span class="qs-label">Sonraki Durak</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ GİTTİĞİM ÜLKELER ══ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ziyaret.edilen</span>
+                <h2 class="section-title">Gittiğim Ülkeler</h2>
+                <p class="section-subtitle">Her birinin bana kattığı farklı bir şey vardı</p>
+            </div>
+            <div class="visits-grid">
+
+                <!-- Kırgızistan -->
+                <div class="visit-card glass-card reveal">
+                    <div class="visit-visual" style="--c1:#3d1a6e;--c2:#1a0a38;">
+                        <span class="v-emoji">🏔️</span>
+                        <div class="visit-overlay">
+                            <span class="visit-flag">🇰🇬</span>
+                            <span class="visit-country-label">Kırgızistan</span>
+                        </div>
+                    </div>
+                    <div class="visit-body">
+                        <span class="visit-year">📍 ANA VATAN · HER ZAMAN BURADA KALBIM</span>
+                        <p class="visit-desc">Doğduğum ve büyüdüğüm yer. Orta Asya'nın en güzel dağlarına, en derin göllerine sahip bu eşsiz ülkede kimliğimi buldum. Benim her şeyimin başladığı toprak.</p>
+                        <div class="visit-highlights">
+                            <span class="visit-hl">🏔️ Alacığ Dağları</span>
+                            <span class="visit-hl">🌊 Issık Göl</span>
+                            <span class="visit-hl">🏙️ Bişkek</span>
+                            <span class="visit-hl">🐎 At Kültürü</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Türkiye -->
+                <div class="visit-card glass-card reveal">
+                    <div class="visit-visual" style="--c1:#8b1a1a;--c2:#420d0d;">
+                        <span class="v-emoji">🕌</span>
+                        <div class="visit-overlay">
+                            <span class="visit-flag">🇹🇷</span>
+                            <span class="visit-country-label">Türkiye</span>
+                        </div>
+                    </div>
+                    <div class="visit-body">
+                        <span class="visit-year">📍 ŞU AN BURADAYIM · ORHUN DEĞİŞİM 2026</span>
+                        <p class="visit-desc">Orhun Değişim Programı kapsamında Türkiye'de yaşıyorum. İki kıtayı birleştiren bu benzersiz ülkede dil, kültür ve tarihi yakından keşfediyorum.</p>
+                        <div class="visit-highlights">
+                            <span class="visit-hl">🌉 İstanbul Boğazı</span>
+                            <span class="visit-hl">🍽️ Türk Mutfağı</span>
+                            <span class="visit-hl">🕌 Camileri</span>
+                            <span class="visit-hl">☕ Çay Kültürü</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Almanya -->
+                <div class="visit-card glass-card reveal">
+                    <div class="visit-visual" style="--c1:#1a2e6e;--c2:#0d1640;">
+                        <span class="v-emoji">🏰</span>
+                        <div class="visit-overlay">
+                            <span class="visit-flag">🇩🇪</span>
+                            <span class="visit-country-label">Almanya</span>
+                        </div>
+                    </div>
+                    <div class="visit-body">
+                        <span class="visit-year">🌍 AVRUPA TURU · GEZİLDİ</span>
+                        <p class="visit-desc">Almanya'nın tarihi şehirleri, mühendislik kültürü ve modernliği beni derinden etkiledi. Berlin'in enerjisi ve tarihin ağırlığı inanılmaz bir kontrast yaratıyor.</p>
+                        <div class="visit-highlights">
+                            <span class="visit-hl">🏛️ Berlin</span>
+                            <span class="visit-hl">🌆 Frankfurt</span>
+                            <span class="visit-hl">🚀 BMW Müzesi</span>
+                            <span class="visit-hl">🎵 Kültür</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Çekya -->
+                <div class="visit-card glass-card reveal">
+                    <div class="visit-visual" style="--c1:#6e3a1a;--c2:#361c0d;">
+                        <span class="v-emoji">🏯</span>
+                        <div class="visit-overlay">
+                            <span class="visit-flag">🇨🇿</span>
+                            <span class="visit-country-label">Çekya</span>
+                        </div>
+                    </div>
+                    <div class="visit-body">
+                        <span class="visit-year">🌍 AVRUPA TURU · GEZİLDİ</span>
+                        <p class="visit-desc">Prag, Avrupa'nın en büyüleyici şehirlerinden biri. Ortaçağ mimarisi, kaldırım taşları ve atmosferiyle sanki başka bir çağa adım atıyorsunuz.</p>
+                        <div class="visit-highlights">
+                            <span class="visit-hl">🌉 Charles Köprüsü</span>
+                            <span class="visit-hl">🏰 Prag Kalesi</span>
+                            <span class="visit-hl">🕰️ Astronomik Saat</span>
+                            <span class="visit-hl">🍺 Eski Şehir</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Polonya -->
+                <div class="visit-card glass-card reveal">
+                    <div class="visit-visual" style="--c1:#7a1a1a;--c2:#3d0d0d;">
+                        <span class="v-emoji">🦅</span>
+                        <div class="visit-overlay">
+                            <span class="visit-flag">🇵🇱</span>
+                            <span class="visit-country-label">Polonya</span>
+                        </div>
+                    </div>
+                    <div class="visit-body">
+                        <span class="visit-year">🌍 AVRUPA TURU · GEZİLDİ</span>
+                        <p class="visit-desc">Polonya'nın dirençli ruhu ve güçlü kültürel kimliği çarpıcıydı. Varşova'nın yeniden inşa edilmiş tarihi merkezi, insanlığın azmine dair güçlü bir tanıklık.</p>
+                        <div class="visit-highlights">
+                            <span class="visit-hl">🏛️ Varşova</span>
+                            <span class="visit-hl">🏰 Eski Şehir</span>
+                            <span class="visit-hl">🎭 Kültür</span>
+                            <span class="visit-hl">🥟 Pierogiler</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İsviçre -->
+                <div class="visit-card glass-card reveal">
+                    <div class="visit-visual" style="--c1:#0d4a1f;--c2:#072210;">
+                        <span class="v-emoji">⛰️</span>
+                        <div class="visit-overlay">
+                            <span class="visit-flag">🇨🇭</span>
+                            <span class="visit-country-label">İsviçre</span>
+                        </div>
+                    </div>
+                    <div class="visit-body">
+                        <span class="visit-year">🌍 AVRUPA TURU · GEZİLDİ</span>
+                        <p class="visit-desc">Alplerin ülkesi. Doğanın bu kadar mükemmel olabileceğine inanmak için buraya gitmek gerekiyor. Zürih'in düzeni, dağların ihtişamı ve İsviçre çikolatası.</p>
+                        <div class="visit-highlights">
+                            <span class="visit-hl">🏔️ Alpler</span>
+                            <span class="visit-hl">🏙️ Zürih</span>
+                            <span class="visit-hl">💧 Şelaleler</span>
+                            <span class="visit-hl">🍫 Çikolata</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fransa -->
+                <div class="visit-card glass-card reveal">
+                    <div class="visit-visual" style="--c1:#1a3d8b;--c2:#0d1f45;">
+                        <span class="v-emoji">🗼</span>
+                        <div class="visit-overlay">
+                            <span class="visit-flag">🇫🇷</span>
+                            <span class="visit-country-label">Fransa</span>
+                        </div>
+                    </div>
+                    <div class="visit-body">
+                        <span class="visit-year">🌍 AVRUPA TURU · GEZİLDİ</span>
+                        <p class="visit-desc">Paris — aşk, sanat ve mimarlığın başkenti. Eyfel Kulesi'nin altında durmak bambaşka bir his. Fransız kültürünün zarafetini ve mutfağının zenginliğini yaşadım.</p>
+                        <div class="visit-highlights">
+                            <span class="visit-hl">🗼 Eyfel Kulesi</span>
+                            <span class="visit-hl">🏛️ Louvre</span>
+                            <span class="visit-hl">🎨 Sanat</span>
+                            <span class="visit-hl">🥐 Gastronomisi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sonraki Durak -->
+                <div class="visit-card glass-card reveal" style="border-style:dashed; opacity:0.8;">
+                    <div class="visit-visual" style="--c1:#1a1a5a;--c2:#0d0d31;">
+                        <span class="v-emoji">🗺️</span>
+                        <div class="visit-overlay">
+                            <span class="visit-flag">✈️</span>
+                            <span class="visit-country-label">Sonraki Durak</span>
+                        </div>
+                    </div>
+                    <div class="visit-body">
+                        <span class="visit-year">🔮 PLANLANIYOR · YAKINDA</span>
+                        <p class="visit-desc">Sıradaki ülke henüz belli değil, ama her yeni yerin hayatıma bir şeyler katacağını biliyorum. Belki Japonya? Belki Norveç? Hayaller sayfama bak!</p>
+                        <div class="visit-highlights">
+                            <span class="visit-hl">🤔 Bilinmiyor</span>
+                            <span class="visit-hl">✨ Sürpriz</span>
+                            <span class="visit-hl">🚀 Yakında</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SEYAHAT FELSEFESİ ══ -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">seyahat.felsefesi</span>
+                <h2 class="section-title">Neden Seyahat Ediyorum?</h2>
+            </div>
+            <div class="now-bento" style="grid-template-columns:1fr 1fr 1fr; max-width:960px; margin:0 auto;">
+                <div class="now-card glass-card reveal">
+                    <span class="now-icon">🌍</span>
+                    <h3>Yeni Perspektifler</h3>
+                    <ul class="now-list">
+                        <li>Farklı kültürleri anlamak</li>
+                        <li>Önyargıları kırmak</li>
+                        <li>Dünyayı farklı gözlerle görmek</li>
+                        <li>Kendi köküme daha iyi bakmak</li>
+                    </ul>
+                </div>
+                <div class="now-card glass-card reveal">
+                    <span class="now-icon">🤝</span>
+                    <h3>Bağlantılar</h3>
+                    <ul class="now-list">
+                        <li>Dünya genelinde arkadaşlar</li>
+                        <li>Farklı dillerde iletişim</li>
+                        <li>Uluslararası ağ kurmak</li>
+                        <li>İnsan ortak noktaları bulmak</li>
+                    </ul>
+                </div>
+                <div class="now-card glass-card reveal">
+                    <span class="now-icon">📚</span>
+                    <h3>Öğrenme</h3>
+                    <ul class="now-list">
+                        <li>Dil pratiği yapmak</li>
+                        <li>Tarihi yerinde görmek</li>
+                        <li>Yeni beceriler edinmek</li>
+                        <li>Kitaplarda olmayan bilgi</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:48px;">
+                <a href="dreams.html" class="btn btn-primary">
+                    Hayallerimi de Gör
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-bracket">[</span>
+                    <span>ARISEL OS v2.0</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-tagline">Merak, kahvesiz geçmeyen sabahlar ve çok fazla CSS ile inşa edildi.</p>
+                <div class="footer-meta">
+                    <span>© 2026 Asel Aripzhanova</span>
+                    <span class="sep">·</span>
+                    <span>Türkiye'de ❤️ ile yapıldı</span>
+                    <span class="sep">·</span>
+                    <span>Sürüm 2.0.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

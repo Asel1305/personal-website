@@ -201,3 +201,37 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         window.scrollTo({ top: offset, behavior: 'smooth' });
     });
 });
+
+/* ── URL tabanlı aktif nav bağlantısı (çoklu sayfa yapısı) ── */
+(function() {
+    const sayfa = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(a => {
+        const href = (a.getAttribute('href') || '').split('#')[0];
+        if (!href) return;
+        const hedefSayfa = href.split('/').pop() || 'index.html';
+        if (hedefSayfa === sayfa) {
+            a.classList.add('page-active');
+        }
+    });
+})();
+
+/* ── Galeri kategori filtresi (gallery.html) ── */
+const gcatButtons = document.querySelectorAll('.gcat');
+if (gcatButtons.length) {
+    gcatButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filtre = btn.dataset.filter;
+            gcatButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.gfi[data-cat]').forEach(item => {
+                if (filtre === 'all' || item.dataset.cat === filtre) {
+                    item.style.opacity = '1';
+                    item.style.transform = '';
+                } else {
+                    item.style.opacity = '0.2';
+                    item.style.transform = 'scale(0.97)';
+                }
+            });
+        });
+    });
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayallerim · ARISEL OS v2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ══ NAVİGASYON ══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">ARISEL</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-version">v2.0</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#about">Hakkımda</a></li>
+                <li><a href="index.html#now">Şimdi</a></li>
+                <li><a href="travels.html">Seyahatler</a></li>
+                <li><a href="dreams.html">Hayaller</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="vision2030.html">Vizyon 2030</a></li>
+                <li><a href="index.html#contact">İletişim</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+                    <span class="theme-icon">☀️</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══ SAYFA HERO ══ -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Ana Sayfa</a>
+                <span class="bc-sep">/</span>
+                <span class="bc-cur">Hayaller</span>
+            </div>
+            <span class="page-hero-tag">gelecek.destinasyonlar</span>
+            <h1 class="page-hero-title">Hayallerimin Yerleri</h1>
+            <p class="page-hero-subtitle">
+                Henüz gitmediğim, ama her gün düşündüğüm yerler.
+                Bu haritalar benim için bir gün gerçeğe dönüşecek.
+            </p>
+        </div>
+    </section>
+
+    <!-- ══ HIZLI İSTATİSTİKLER ══ -->
+    <div class="container">
+        <div class="quick-stats reveal">
+            <div class="quick-stat">
+                <span class="qs-number">5</span>
+                <span class="qs-label">Hayal Destinasyon</span>
+            </div>
+            <div class="quick-stat">
+                <span class="qs-number">3</span>
+                <span class="qs-label">Kıta Hedef</span>
+            </div>
+            <div class="quick-stat">
+                <span class="qs-number">2030</span>
+                <span class="qs-label">Hedef Yıl</span>
+            </div>
+            <div class="quick-stat">
+                <span class="qs-number">∞</span>
+                <span class="qs-label">Heyecan</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ HAYAL DESTİNASYONLAR ══ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">hayal.listesi</span>
+                <h2 class="section-title">Gitmek İstediğim Yerler</h2>
+                <p class="section-subtitle">
+                    Aşağıdaki görseller yapay zeka yardımıyla oluşturulmuş yer tutuculardır.
+                    Gerçek fotoğraflarımı buraya ekleyeceğim.
+                </p>
+            </div>
+
+            <div class="dreams-grid">
+
+                <!-- JAPONYA -->
+                <div class="dream-card glass-card reveal">
+                    <div class="dream-image" style="--c1:#8b1a4a;--c2:#3d0720;">
+                        <span class="dream-img-bg">🌸</span>
+                        <div class="dream-img-center">
+                            <span class="dream-main-em">⛩️</span>
+                            <span class="dream-flag-em">🇯🇵</span>
+                            <span class="dream-ph-label">📷 Fotoğraf eklenecek</span>
+                        </div>
+                    </div>
+                    <div class="dream-body">
+                        <div class="dream-head">
+                            <span class="dream-country-name">Japonya</span>
+                            <span class="dream-rank">#1 Hayal</span>
+                        </div>
+                        <div class="dream-loc">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Tokyo · Kyoto · Fuji Dağı · Osaka
+                        </div>
+                        <p class="dream-desc">
+                            Japonya, teknoloji ile geleneğin mükemmel birleşimi. Sabah kiraz çiçekli bir bahçede oturmak, öğleden sonra Tokyo'nun futuristik sokaklarında yürümek — bu kontrast beni çok heyecanlandırıyor.
+                        </p>
+                        <div class="dream-why-block">
+                            <div class="dream-why-label">✦ Neden gitmek istiyorum?</div>
+                            <div class="dream-why-text">Japonya'nın teknoloji kültürü benim için büyük bir ilham kaynağı. Yazılım dünyasında Japonya'nın yarattığı etkiyi ve Japon mühendislik anlayışını yakından görmek istiyorum. Aynı zamanda fotoğrafçılık tutkumu Japon estetiğiyle buluşturmak harika olurdu.</div>
+                        </div>
+                        <div class="dream-tags">
+                            <span class="dream-tag">🌸 Kiraz Çiçeği</span>
+                            <span class="dream-tag">🤖 Teknoloji</span>
+                            <span class="dream-tag">🍜 Ramen</span>
+                            <span class="dream-tag">🗻 Fuji</span>
+                            <span class="dream-tag">🎎 Kültür</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NORVEÇ -->
+                <div class="dream-card glass-card reveal">
+                    <div class="dream-image" style="--c1:#0d2a5c;--c2:#071536;">
+                        <span class="dream-img-bg">🌊</span>
+                        <div class="dream-img-center">
+                            <span class="dream-main-em">🏔️</span>
+                            <span class="dream-flag-em">🇳🇴</span>
+                            <span class="dream-ph-label">📷 Fotoğraf eklenecek</span>
+                        </div>
+                    </div>
+                    <div class="dream-body">
+                        <div class="dream-head">
+                            <span class="dream-country-name">Norveç</span>
+                            <span class="dream-rank">#2 Hayal</span>
+                        </div>
+                        <div class="dream-loc">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Oslo · Bergen · Tromsø · Lofoten
+                        </div>
+                        <p class="dream-desc">
+                            Norveç fiyortları, dünyanın en dramatik doğa manzaralarından. Ama en büyük hayalim Tromsø'de kuzey ışıklarını (Aurora Borealis) görmek — karanlık bir gökyüzünde dans eden renkler.
+                        </p>
+                        <div class="dream-why-block">
+                            <div class="dream-why-label">✦ Neden gitmek istiyorum?</div>
+                            <div class="dream-why-text">Kuzey ışıklarını görmek hayat listemizdeki en üst sırada. Fotoğrafçılık için Norveç manzaraları inanılmaz fırsatlar sunuyor. Ayrıca Norveç'in teknoloji ve sürdürülebilirlik alanındaki liderliği de ilgimi çekiyor.</div>
+                        </div>
+                        <div class="dream-tags">
+                            <span class="dream-tag">🌌 Aurora Borealis</span>
+                            <span class="dream-tag">⛵ Fiyortlar</span>
+                            <span class="dream-tag">❄️ Kış</span>
+                            <span class="dream-tag">🐟 Lofoten</span>
+                            <span class="dream-tag">🌅 Kutup Günü</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İZLANDA -->
+                <div class="dream-card glass-card reveal">
+                    <div class="dream-image" style="--c1:#073a3a;--c2:#031c1c;">
+                        <span class="dream-img-bg">🌋</span>
+                        <div class="dream-img-center">
+                            <span class="dream-main-em">❄️</span>
+                            <span class="dream-flag-em">🇮🇸</span>
+                            <span class="dream-ph-label">📷 Fotoğraf eklenecek</span>
+                        </div>
+                    </div>
+                    <div class="dream-body">
+                        <div class="dream-head">
+                            <span class="dream-country-name">İzlanda</span>
+                            <span class="dream-rank">#3 Hayal</span>
+                        </div>
+                        <div class="dream-loc">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Reykjavik · Güneybatı Halkası · Jökulsárlón
+                        </div>
+                        <p class="dream-desc">
+                            İzlanda, doğanın en uç noktası. Aktif yanardağlar, buzullar, jeotermal havuzlar ve kuzey ışıkları aynı anda. Bu kadar farklı iklim ve coğrafya tek bir adada nasıl bir araya geliyor?
+                        </p>
+                        <div class="dream-why-block">
+                            <div class="dream-why-label">✦ Neden gitmek istiyorum?</div>
+                            <div class="dream-why-text">İzlanda fotoğrafçılık için bir cennet. Kara kum plajları, buz mağaraları ve alacakaranlık saatlerindeki dramatik manzaralar — bunlar ancak İzlanda'da var. Ayrıca dünyanın en huzurlu ve boş yerlerinden biri olması çok çekici.</div>
+                        </div>
+                        <div class="dream-tags">
+                            <span class="dream-tag">🌋 Yanardağ</span>
+                            <span class="dream-tag">🧊 Buzullar</span>
+                            <span class="dream-tag">♨️ Jeotermal</span>
+                            <span class="dream-tag">🌌 Kuzey Işıkları</span>
+                            <span class="dream-tag">🐳 Balina Turu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YENİ ZELANDA -->
+                <div class="dream-card glass-card reveal">
+                    <div class="dream-image" style="--c1:#0d4a1a;--c2:#072210;">
+                        <span class="dream-img-bg">🦅</span>
+                        <div class="dream-img-center">
+                            <span class="dream-main-em">🏔️</span>
+                            <span class="dream-flag-em">🇳🇿</span>
+                            <span class="dream-ph-label">📷 Fotoğraf eklenecek</span>
+                        </div>
+                    </div>
+                    <div class="dream-body">
+                        <div class="dream-head">
+                            <span class="dream-country-name">Yeni Zelanda</span>
+                            <span class="dream-rank">#4 Hayal</span>
+                        </div>
+                        <div class="dream-loc">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Auckland · Queenstown · Hobbiton · Milford Sound
+                        </div>
+                        <p class="dream-desc">
+                            Yeni Zelanda, dünyanın en uzak ve en doğal köşelerinden. Maori kültürü, Hobbiton, fiyortlar ve hızlı macera sporları — bu ada her türlü meraklıya bir şeyler sunuyor.
+                        </p>
+                        <div class="dream-why-block">
+                            <div class="dream-why-label">✦ Neden gitmek istiyorum?</div>
+                            <div class="dream-why-text">Yeni Zelanda, Yüzüklerin Efendisi hayranları için ayrı bir anlam taşıyor. Ama bunun ötesinde, Maori kültürü ve bu ülkenin çevre politikaları beni derinden ilgilendiriyor. En "uzak" hissettiren yer olmak istiyor olmasını hep merak ettim.</div>
+                        </div>
+                        <div class="dream-tags">
+                            <span class="dream-tag">🧙 Hobbiton</span>
+                            <span class="dream-tag">🎿 Macera</span>
+                            <span class="dream-tag">🌿 Doğa</span>
+                            <span class="dream-tag">🦜 Maori Kültürü</span>
+                            <span class="dream-tag">⛵ Fiyortlar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İSVİÇRE (daha kapsamlı keşif) — Geniş kart -->
+                <div class="dream-card glass-card reveal" style="grid-column:span 2;">
+                    <div class="dream-image" style="--c1:#1a3d7a;--c2:#0d1f3d; max-height:280px;">
+                        <span class="dream-img-bg">⛰️</span>
+                        <div class="dream-img-center">
+                            <span class="dream-main-em">🏔️</span>
+                            <span class="dream-flag-em">🇨🇭</span>
+                            <span class="dream-ph-label">📷 Fotoğraf eklenecek · Zermatt / Interlaken</span>
+                        </div>
+                    </div>
+                    <div class="dream-body">
+                        <div class="dream-head">
+                            <span class="dream-country-name">İsviçre — Daha Derin Keşif</span>
+                            <span class="dream-rank">#5 Hayal</span>
+                        </div>
+                        <div class="dream-loc">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Zermatt · Interlaken · Bern · Lucerne · Matterhorn
+                        </div>
+                        <p class="dream-desc">
+                            İsviçre'ye kısa bir dokunuş yaptım ama asıl görmek istediğim yerler hâlâ listede. Zermatt'tan Matterhorn'a bakmak, Interlaken'de ekstrem sporlar denemek ve Alp köylerinde kaybolmak istiyorum. Bu sefer daha uzun, daha derin, daha gerçek.
+                        </p>
+                        <div class="dream-why-block">
+                            <div class="dream-why-label">✦ Neden tekrar gitmek istiyorum?</div>
+                            <div class="dream-why-text">İlk ziyaretimde şehirleri gördüm, ama İsviçre'nin asıl ruhu dağlarda. Matterhorn'un önünde durmak, tren yolculuğuyla dağları aşmak ve küçük Alpine köylerinde vakit geçirmek benim için hâlâ gerçekleşmemiş bir hayal.</div>
+                        </div>
+                        <div class="dream-tags">
+                            <span class="dream-tag">⛰️ Matterhorn</span>
+                            <span class="dream-tag">🚂 Alpine Tren</span>
+                            <span class="dream-tag">🪂 Extrem Spor</span>
+                            <span class="dream-tag">🏡 Alpine Köyler</span>
+                            <span class="dream-tag">⛷️ Kayak</span>
+                            <span class="dream-tag">🍫 Çikolata Fabrikası</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SEYAHAT HEDEFLERİ ══ -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">seyahat.hedefleri</span>
+                <h2 class="section-title">2030 Seyahat Hedeflerim</h2>
+                <p class="section-subtitle">Haritamdaki bu yerler birer birer gerçeğe dönüşecek</p>
+            </div>
+            <div class="travel-goals-grid">
+                <div class="tg-item reveal">
+                    <span class="tg-emoji">🌍</span>
+                    <p class="tg-text"><strong>10+ ülke</strong> gezmek. Her biri farklı bir kıta ve kültür.</p>
+                </div>
+                <div class="tg-item reveal">
+                    <span class="tg-emoji">📸</span>
+                    <p class="tg-text">Her ülkeden en az <strong>100 fotoğraf</strong> çekerek galeri oluşturmak.</p>
+                </div>
+                <div class="tg-item reveal">
+                    <span class="tg-emoji">🌸</span>
+                    <p class="tg-text">Japonya'yı <strong>kiraz çiçeği mevsiminde</strong> ziyaret etmek.</p>
+                </div>
+                <div class="tg-item reveal">
+                    <span class="tg-emoji">🌌</span>
+                    <p class="tg-text"><strong>Kuzey ışıklarını</strong> kendi gözlerimle görmek — Norveç veya İzlanda'da.</p>
+                </div>
+                <div class="tg-item reveal">
+                    <span class="tg-emoji">🎒</span>
+                    <p class="tg-text">En az bir kez <strong>solo seyahat</strong> yaparak tamamen bağımsız gezmek.</p>
+                </div>
+                <div class="tg-item reveal">
+                    <span class="tg-emoji">🌏</span>
+                    <p class="tg-text">Asya, Avrupa ve Okyanusya'yı — <strong>3 farklı kıtayı</strong> deneyimlemek.</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:44px;">
+                <a href="travels.html" class="btn btn-ghost" style="margin-right:12px;">Gittiğim Yerlere Bak</a>
+                <a href="vision2030.html" class="btn btn-primary">
+                    Vizyon 2030'a Bak
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-bracket">[</span>
+                    <span>ARISEL OS v2.0</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-tagline">Merak, kahvesiz geçmeyen sabahlar ve çok fazla CSS ile inşa edildi.</p>
+                <div class="footer-meta">
+                    <span>© 2026 Asel Aripzhanova</span>
+                    <span class="sep">·</span>
+                    <span>Türkiye'de ❤️ ile yapıldı</span>
+                    <span class="sep">·</span>
+                    <span>Sürüm 2.0.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

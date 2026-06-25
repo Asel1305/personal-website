@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri · ARISEL OS v2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ══ NAVİGASYON ══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">ARISEL</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-version">v2.0</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#about">Hakkımda</a></li>
+                <li><a href="index.html#now">Şimdi</a></li>
+                <li><a href="travels.html">Seyahatler</a></li>
+                <li><a href="dreams.html">Hayaller</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="vision2030.html">Vizyon 2030</a></li>
+                <li><a href="index.html#contact">İletişim</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+                    <span class="theme-icon">☀️</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══ SAYFA HERO ══ -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Ana Sayfa</a>
+                <span class="bc-sep">/</span>
+                <span class="bc-cur">Galeri</span>
+            </div>
+            <span class="page-hero-tag">bellek.bankası</span>
+            <h1 class="page-hero-title">Galerim</h1>
+            <p class="page-hero-subtitle">
+                Kendi fotoğraflarım yakında bu yer tutucuların yerini alacak.
+                Şimdilik hayal gücünüze bırakıyorum.
+            </p>
+        </div>
+    </section>
+
+    <!-- ══ GALERİ İÇERİĞİ ══ -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Kategori sekmeleri -->
+            <div class="gallery-cats reveal">
+                <button class="gcat active" data-filter="all">Tümü</button>
+                <button class="gcat" data-filter="nature">🌿 Doğa</button>
+                <button class="gcat" data-filter="city">🏙️ Şehirler</button>
+                <button class="gcat" data-filter="memory">💜 Anılar</button>
+                <button class="gcat" data-filter="tech">💻 Teknoloji</button>
+                <button class="gcat" data-filter="food">🍽️ Yemek</button>
+            </div>
+
+            <!-- Galeri Izgarası -->
+            <div class="gallery-full-grid">
+
+                <!-- Satır 1 -->
+                <div class="gfi tall reveal" data-cat="nature">
+                    <div class="gfi-inner" style="--gc1:#1a4a1a;--gc2:#0a2a0a;">
+                        <span class="gfi-em">🏔️</span>
+                        <span class="gfi-cap">Kırgızistan Dağları</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi wide reveal" data-cat="city">
+                    <div class="gfi-inner" style="--gc1:#4a1a1a;--gc2:#2a0a0a;">
+                        <span class="gfi-em">🌉</span>
+                        <span class="gfi-cap">İstanbul Boğazı</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi reveal" data-cat="nature">
+                    <div class="gfi-inner" style="--gc1:#1a1a4a;--gc2:#0a0a2a;">
+                        <span class="gfi-em">🌌</span>
+                        <span class="gfi-cap">Yıldızlı Gökyüzü</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <!-- Satır 2 -->
+                <div class="gfi reveal" data-cat="city">
+                    <div class="gfi-inner" style="--gc1:#2a1a4a;--gc2:#150a2a;">
+                        <span class="gfi-em">🕌</span>
+                        <span class="gfi-cap">Türk Mimarisi</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi reveal" data-cat="memory">
+                    <div class="gfi-inner" style="--gc1:#4a2a1a;--gc2:#2a150a;">
+                        <span class="gfi-em">☕</span>
+                        <span class="gfi-cap">Kahve Keyfi</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi tall reveal" data-cat="city">
+                    <div class="gfi-inner" style="--gc1:#1a3a4a;--gc2:#0a1e2a;">
+                        <span class="gfi-em">🏯</span>
+                        <span class="gfi-cap">Prag Kalesi</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi reveal" data-cat="nature">
+                    <div class="gfi-inner" style="--gc1:#1a4a3a;--gc2:#0a2a1e;">
+                        <span class="gfi-em">🌊</span>
+                        <span class="gfi-cap">Issık Göl</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <!-- Satır 3 -->
+                <div class="gfi reveal" data-cat="tech">
+                    <div class="gfi-inner" style="--gc1:#1a1a4a;--gc2:#0a0a2a;">
+                        <span class="gfi-em">💻</span>
+                        <span class="gfi-cap">Kodlama Seansı</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi reveal" data-cat="food">
+                    <div class="gfi-inner" style="--gc1:#4a3a1a;--gc2:#2a1e0a;">
+                        <span class="gfi-em">🥘</span>
+                        <span class="gfi-cap">Türk Mutfağı</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi wide reveal" data-cat="memory">
+                    <div class="gfi-inner" style="--gc1:#3a1a4a;--gc2:#1e0a2a;">
+                        <span class="gfi-em">🌅</span>
+                        <span class="gfi-cap">Gün Batımı Anı</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <!-- Satır 4 -->
+                <div class="gfi tall reveal" data-cat="city">
+                    <div class="gfi-inner" style="--gc1:#1a2e4a;--gc2:#0a1826;">
+                        <span class="gfi-em">🗼</span>
+                        <span class="gfi-cap">Paris Geceleri</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi reveal" data-cat="nature">
+                    <div class="gfi-inner" style="--gc1:#0a3a2a;--gc2:#051e15;">
+                        <span class="gfi-em">⛰️</span>
+                        <span class="gfi-cap">Alp Manzarası</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi reveal" data-cat="memory">
+                    <div class="gfi-inner" style="--gc1:#4a1a2e;--gc2:#2a0a18;">
+                        <span class="gfi-em">📚</span>
+                        <span class="gfi-cap">Okuma Anları</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi reveal" data-cat="food">
+                    <div class="gfi-inner" style="--gc1:#4a2a0a;--gc2:#2a1505;">
+                        <span class="gfi-em">🥐</span>
+                        <span class="gfi-cap">Paris Kahvaltısı</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <!-- Satır 5 -->
+                <div class="gfi reveal" data-cat="city">
+                    <div class="gfi-inner" style="--gc1:#1a4a2a;--gc2:#0a2a15;">
+                        <span class="gfi-em">🦅</span>
+                        <span class="gfi-cap">Varşova</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi wide tall reveal" data-cat="memory">
+                    <div class="gfi-inner" style="--gc1:#1a1a4a;--gc2:#0a0a28;">
+                        <span class="gfi-em">✈️</span>
+                        <span class="gfi-cap">Yolculuk Anları</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+                <div class="gfi reveal" data-cat="tech">
+                    <div class="gfi-inner" style="--gc1:#0a2a4a;--gc2:#051525;">
+                        <span class="gfi-em">🖥️</span>
+                        <span class="gfi-cap">Kurulum</span>
+                    </div>
+                    <span class="gfi-ph-badge">📷 Yakında</span>
+                </div>
+
+            </div>
+
+            <!-- Fotoğraf bekleme notu -->
+            <div class="glass-card reveal" style="max-width:600px; margin:48px auto 0; padding:32px; text-align:center; background:rgba(139,92,246,0.05); border-color:rgba(139,92,246,0.2);">
+                <div style="font-size:3rem; margin-bottom:16px;">📷</div>
+                <h3 style="font-family:'Space Grotesk',sans-serif; font-size:1.2rem; font-weight:700; margin-bottom:10px;">Gerçek Fotoğraflar Yakında</h3>
+                <p style="color:var(--txt2); font-size:0.88rem; line-height:1.7;">
+                    Bu yer tutucuların tamamı kendi fotoğraflarımla değişecek.
+                    Her anın, her şehrin ve her anının kendi hikayesi olacak.
+                    Takipte kalın!
+                </p>
+                <div style="display:flex; justify-content:center; gap:12px; margin-top:20px; flex-wrap:wrap;">
+                    <a href="travels.html" class="btn btn-ghost" style="font-size:0.82rem; padding:9px 18px;">Seyahatlerimi Gör</a>
+                    <a href="dreams.html" class="btn btn-primary" style="font-size:0.82rem; padding:9px 18px;">Hayallerimi Gör</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-bracket">[</span>
+                    <span>ARISEL OS v2.0</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-tagline">Merak, kahvesiz geçmeyen sabahlar ve çok fazla CSS ile inşa edildi.</p>
+                <div class="footer-meta">
+                    <span>© 2026 Asel Aripzhanova</span>
+                    <span class="sep">·</span>
+                    <span>Türkiye'de ❤️ ile yapıldı</span>
+                    <span class="sep">·</span>
+                    <span>Sürüm 2.0.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

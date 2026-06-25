@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizyon 2030 · ARISEL OS v2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ══ NAVİGASYON ══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">ARISEL</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-version">v2.0</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#about">Hakkımda</a></li>
+                <li><a href="index.html#now">Şimdi</a></li>
+                <li><a href="travels.html">Seyahatler</a></li>
+                <li><a href="dreams.html">Hayaller</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="vision2030.html">Vizyon 2030</a></li>
+                <li><a href="index.html#contact">İletişim</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+                    <span class="theme-icon">☀️</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══ SAYFA HERO ══ -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Ana Sayfa</a>
+                <span class="bc-sep">/</span>
+                <span class="bc-cur">Vizyon 2030</span>
+            </div>
+            <span class="page-hero-tag">gelecek.yol.haritası</span>
+            <h1 class="page-hero-title">Vizyon 2030</h1>
+            <p class="page-hero-subtitle">
+                2026'dan 2030'a uzanan yol haritam. Full Stack + AI geliştirici,
+                uluslararası kariyer ve hayal hayatı.
+            </p>
+        </div>
+    </section>
+
+    <!-- ══ HIZLI İSTATİSTİKLER ══ -->
+    <div class="container">
+        <div class="quick-stats reveal">
+            <div class="quick-stat">
+                <span class="qs-number">2030</span>
+                <span class="qs-label">Hedef Yıl</span>
+            </div>
+            <div class="quick-stat">
+                <span class="qs-number">4</span>
+                <span class="qs-label">Kariyer Aşaması</span>
+            </div>
+            <div class="quick-stat">
+                <span class="qs-number">10+</span>
+                <span class="qs-label">Teknoloji Hedefi</span>
+            </div>
+            <div class="quick-stat">
+                <span class="qs-number">3+</span>
+                <span class="qs-label">Proje Hedefi</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ KARİYER YOL HARİTASI ══ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">kariyer.rotası</span>
+                <h2 class="section-title">Kariyer Yol Haritası</h2>
+                <p class="section-subtitle">Her yıl yeni bir seviye, yeni bir hedef</p>
+            </div>
+            <div class="roadmap">
+                <div class="roadmap-spine"></div>
+
+                <!-- 2026 -->
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node" style="background:linear-gradient(135deg,#5b21b6,#8b5cf6);border-color:#8b5cf6;box-shadow:0 0 30px rgba(139,92,246,0.5);">
+                            <span>🔥</span>
+                        </div>
+                        <span class="rn-year">2026</span>
+                    </div>
+                    <div class="roadmap-card glass-card">
+                        <h3>Full Stack Temelleri</h3>
+                        <p>React, Next.js ve Node.js ile sağlam bir frontend ve backend deneyimi kazanmak. İlk gerçek dünya projelerini tamamlamak ve portföy oluşturmak. İlk staj pozisyonunu kazanmak.</p>
+                        <div class="roadmap-chips">
+                            <span class="chip done">✓ HTML / CSS / JS</span>
+                            <span class="chip done">✓ Git &amp; GitHub</span>
+                            <span class="chip">→ React / Next.js</span>
+                            <span class="chip">→ Node.js / Express</span>
+                            <span class="chip">→ PostgreSQL</span>
+                            <span class="chip">→ İlk Staj</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2027 -->
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node">
+                            <span>🤖</span>
+                        </div>
+                        <span class="rn-year">2027</span>
+                    </div>
+                    <div class="roadmap-card glass-card">
+                        <h3>AI &amp; Makine Öğrenmesi</h3>
+                        <p>Python ile makine öğrenmesi temellerini öğrenmek. LLM API'leriyle çalışmak ve yapay zeka destekli ürünler geliştirmek. Mühendislik becerilerimi AI ile birleştirmek.</p>
+                        <div class="roadmap-chips">
+                            <span class="chip">→ Python / Pandas / NumPy</span>
+                            <span class="chip">→ TensorFlow / PyTorch</span>
+                            <span class="chip">→ OpenAI / Gemini API</span>
+                            <span class="chip">→ RAG Sistemleri</span>
+                            <span class="chip">→ İlk AI Ürünü</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2028 -->
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node">
+                            <span>🌍</span>
+                        </div>
+                        <span class="rn-year">2028</span>
+                    </div>
+                    <div class="roadmap-card glass-card">
+                        <h3>Uluslararası Kariyer</h3>
+                        <p>Küresel bir şirkette yazılım mühendisi olarak çalışmak. Çok kültürlü ekiplerle iş birliği yapmak ve teknoloji çözümlerine farklı bir bakış açısı katmak. Uzaktan veya uluslararası çalışma deneyimi.</p>
+                        <div class="roadmap-chips">
+                            <span class="chip">→ Full Stack Engineer</span>
+                            <span class="chip">→ AI / ML Entegrasyonu</span>
+                            <span class="chip">→ Uluslararası Şirket</span>
+                            <span class="chip">→ Açık Kaynak Katkısı</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2029 -->
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node">
+                            <span>📚</span>
+                        </div>
+                        <span class="rn-year">2029</span>
+                    </div>
+                    <div class="roadmap-card glass-card">
+                        <h3>Derin Uzmanlaşma</h3>
+                        <p>Almanca'yı B2/C1 seviyesine çıkarmak. Belki bir yüksek lisans derecesi? Yazılım mimarisi ve sistem tasarımı konularında uzmanlaşmak. Topluluk ve mentorluk.</p>
+                        <div class="roadmap-chips">
+                            <span class="chip">→ Almanca B2/C1</span>
+                            <span class="chip">→ Sistem Mimarisi</span>
+                            <span class="chip">→ Yüksek Lisans?</span>
+                            <span class="chip">→ Mentorluk</span>
+                            <span class="chip">→ Konferanslar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2030 -->
+                <div class="roadmap-item reveal">
+                    <div class="roadmap-node-wrap">
+                        <div class="roadmap-node glow-node">
+                            <span>✨</span>
+                        </div>
+                        <span class="rn-year">2030</span>
+                    </div>
+                    <div class="roadmap-card glass-card vision-final">
+                        <h3>Hayal Hayatı &amp; Gerçek Etki</h3>
+                        <p>Anlamlı projeler üretmek, farklı şehirlerden çalışmak ve 10'dan fazla ülke gezip bu deneyimleri hem yazılım hem de hayatla birleştirmek. Kendi küçük girişimimi kurmak mı? Kim bilir.</p>
+                        <div class="roadmap-chips">
+                            <span class="chip">→ 10+ Ülke</span>
+                            <span class="chip">→ Uzaktan Çalışma</span>
+                            <span class="chip">→ Kendi Projem</span>
+                            <span class="chip">→ Hayal Gerçek ✨</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ TEKNOLOJİ YIĞINI ══ -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">teknoloji.yığını</span>
+                <h2 class="section-title">Teknoloji Hedeflerim</h2>
+                <p class="section-subtitle">Öğreneceklerim, öğrendiklerim ve öğrenmek istediklerim</p>
+            </div>
+
+            <div class="stack-label">🎨 Frontend</div>
+            <div class="tech-grid">
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🌐</span>
+                    <div class="tech-name">HTML/CSS</div>
+                    <div class="tech-st done">✓ Tamamlandı</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">⚡</span>
+                    <div class="tech-name">JavaScript</div>
+                    <div class="tech-st active">◉ Aktif</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🔷</span>
+                    <div class="tech-name">TypeScript</div>
+                    <div class="tech-st learning">→ Öğreniyorum</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">⚛️</span>
+                    <div class="tech-name">React</div>
+                    <div class="tech-st learning">→ Öğreniyorum</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">▲</span>
+                    <div class="tech-name">Next.js</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">💨</span>
+                    <div class="tech-name">Tailwind</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+            </div>
+
+            <div class="stack-label">⚙️ Backend</div>
+            <div class="tech-grid">
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🟢</span>
+                    <div class="tech-name">Node.js</div>
+                    <div class="tech-st learning">→ Öğreniyorum</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🐍</span>
+                    <div class="tech-name">Python</div>
+                    <div class="tech-st learning">→ Öğreniyorum</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🗄️</span>
+                    <div class="tech-name">PostgreSQL</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🍃</span>
+                    <div class="tech-name">MongoDB</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🐳</span>
+                    <div class="tech-name">Docker</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">☁️</span>
+                    <div class="tech-name">AWS/Cloud</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+            </div>
+
+            <div class="stack-label">🤖 Yapay Zeka</div>
+            <div class="tech-grid">
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🧠</span>
+                    <div class="tech-name">TensorFlow</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🔥</span>
+                    <div class="tech-name">PyTorch</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🤖</span>
+                    <div class="tech-name">OpenAI API</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🔗</span>
+                    <div class="tech-name">LangChain</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">📊</span>
+                    <div class="tech-name">Data Science</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+                <div class="tech-item glass-card reveal">
+                    <span class="tech-em">🌐</span>
+                    <div class="tech-name">RAG / Agents</div>
+                    <div class="tech-st goal">◎ Hedef</div>
+                </div>
+            </div>
+
+            <!-- Teknoloji Durumu Açıklaması -->
+            <div style="display:flex; justify-content:center; gap:28px; flex-wrap:wrap; margin-top:8px; padding:20px 0; border-top:1px solid var(--border);">
+                <span style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--txt2);">
+                    <span style="color:var(--green); font-family:'JetBrains Mono',monospace;">✓ Tamamlandı</span>
+                </span>
+                <span style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--txt2);">
+                    <span style="color:var(--cyan); font-family:'JetBrains Mono',monospace;">◉ Aktif Kullanımda</span>
+                </span>
+                <span style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--txt2);">
+                    <span style="color:var(--violet-l); font-family:'JetBrains Mono',monospace;">→ Öğreniyorum</span>
+                </span>
+                <span style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--txt2);">
+                    <span style="color:var(--amber); font-family:'JetBrains Mono',monospace;">◎ 2030 Hedef</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GELECEK PROJELERİM ══ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">gelecek.projeler</span>
+                <h2 class="section-title">Hayalindeki Projeler</h2>
+                <p class="section-subtitle">Yazmak istediğim kod, yaratmak istediğim ürünler</p>
+            </div>
+            <div class="project-vision-grid">
+
+                <div class="pv-card glass-card reveal">
+                    <span class="pv-icon">🌍</span>
+                    <div class="pv-title">Çok Kültürlü Seyahat Uygulaması</div>
+                    <p class="pv-desc">Farklı ülkelerden insanların birbirine yerel ipuçları, gizli yerler ve kültürel deneyimler paylaşabildiği bir platform. AI destekli öneri sistemi ile kişiselleştirilmiş seyahat rotaları.</p>
+                    <div class="pv-stack">
+                        <span class="pv-tech">Next.js</span>
+                        <span class="pv-tech">Node.js</span>
+                        <span class="pv-tech">PostgreSQL</span>
+                        <span class="pv-tech">OpenAI API</span>
+                        <span class="pv-tech">Maps API</span>
+                    </div>
+                </div>
+
+                <div class="pv-card glass-card reveal">
+                    <span class="pv-icon">🤖</span>
+                    <div class="pv-title">AI Dil Öğrenme Asistanı</div>
+                    <p class="pv-desc">5 dil konuşan biri olarak dil öğrenimindeki zorlukları iyi biliyorum. Kişiselleştirilmiş egzersizler, konuşma pratiği ve kültürel içerik sunan bir AI asistanı.</p>
+                    <div class="pv-stack">
+                        <span class="pv-tech">React</span>
+                        <span class="pv-tech">Python / FastAPI</span>
+                        <span class="pv-tech">LangChain</span>
+                        <span class="pv-tech">Speech API</span>
+                        <span class="pv-tech">RAG</span>
+                    </div>
+                </div>
+
+                <div class="pv-card glass-card reveal">
+                    <span class="pv-icon">📸</span>
+                    <div class="pv-title">Fotoğraf Hikayesi Portfolyosu</div>
+                    <p class="pv-desc">Kendi fotoğraflarımı anlık bir hikaye anlayışıyla sunan kişisel bir platform. Her fotoğraf bir yere, bir zamana, bir duyguya bağlı. AI ile otomatik hikaye üretimi.</p>
+                    <div class="pv-stack">
+                        <span class="pv-tech">Next.js</span>
+                        <span class="pv-tech">Cloudinary</span>
+                        <span class="pv-tech">Supabase</span>
+                        <span class="pv-tech">Vision API</span>
+                        <span class="pv-tech">MDX</span>
+                    </div>
+                </div>
+
+                <div class="pv-card glass-card reveal">
+                    <span class="pv-icon">🎓</span>
+                    <div class="pv-title">Orta Asya Öğrencileri için Kaynak Platformu</div>
+                    <p class="pv-desc">Kırgızistan ve Orta Asya'dan öğrencilerin yurt dışı burs ve eğitim fırsatlarını keşfedebileceği, birbirleriyle deneyim paylaşabileceği Türkçe/Kırgızca platform.</p>
+                    <div class="pv-stack">
+                        <span class="pv-tech">Next.js</span>
+                        <span class="pv-tech">PostgreSQL</span>
+                        <span class="pv-tech">i18n</span>
+                        <span class="pv-tech">Auth.js</span>
+                        <span class="pv-tech">Email API</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ KİŞİSEL BÜYÜME ══ -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">kişisel.büyüme</span>
+                <h2 class="section-title">Kariyer Dışı Hedefler</h2>
+                <p class="section-subtitle">İyi bir yazılımcı olmak yeterli değil — iyi bir insan olmak daha önemli</p>
+            </div>
+            <div class="growth-grid">
+
+                <div class="growth-card glass-card reveal">
+                    <span class="growth-em">🌍</span>
+                    <div class="growth-title">10+ Ülke</div>
+                    <p class="growth-text">2030'a kadar en az 10 farklı ülke gezmek. Her birinden farklı bakış açıları, kültürler ve insanlar edinmek.</p>
+                </div>
+
+                <div class="growth-card glass-card reveal">
+                    <span class="growth-em">🗣️</span>
+                    <div class="growth-title">6. Dil</div>
+                    <p class="growth-text">Almancayı B2/C1 seviyesine çıkarmak. 5 dil konuşan biri için 6. dil bir sonraki doğal adım.</p>
+                </div>
+
+                <div class="growth-card glass-card reveal">
+                    <span class="growth-em">📸</span>
+                    <div class="growth-title">Fotoğraf Sergisi</div>
+                    <p class="growth-text">Seyahat fotoğraflarımla küçük bir çevrimiçi veya fiziksel sergi açmak. Hikayemi görsel dille anlatmak.</p>
+                </div>
+
+                <div class="growth-card glass-card reveal">
+                    <span class="growth-em">✍️</span>
+                    <div class="growth-title">Yazarlık</div>
+                    <p class="growth-text">Teknoloji ve seyahat deneyimlerimi anlatan bir blog başlatmak. Kırgız-Türk teknoloji köprüsü olmak.</p>
+                </div>
+
+                <div class="growth-card glass-card reveal">
+                    <span class="growth-em">🤝</span>
+                    <div class="growth-title">Mentorluk</div>
+                    <p class="growth-text">Kırgızistan'dan yazılıma merak salan genç öğrencilere mentorluk yapmak. İzlediğim yolu geri vermek.</p>
+                </div>
+
+                <div class="growth-card glass-card reveal">
+                    <span class="growth-em">🌱</span>
+                    <div class="growth-title">Sürdürülebilirlik</div>
+                    <p class="growth-text">Teknolojiyi sürdürülebilir çözümler üretmek için kullanmak. Çevre dostu yazılım pratiklerini öğrenmek.</p>
+                </div>
+
+            </div>
+
+            <div style="text-align:center; margin-top:48px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+                <a href="index.html" class="btn btn-ghost">Ana Sayfaya Dön</a>
+                <a href="dreams.html" class="btn btn-primary">
+                    Hayallerimi de Gör
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-bracket">[</span>
+                    <span>ARISEL OS v2.0</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-tagline">Merak, kahvesiz geçmeyen sabahlar ve çok fazla CSS ile inşa edildi.</p>
+                <div class="footer-meta">
+                    <span>© 2026 Asel Aripzhanova</span>
+                    <span class="sep">·</span>
+                    <span>Türkiye'de ❤️ ile yapıldı</span>
+                    <span class="sep">·</span>
+                    <span>Sürüm 2.0.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
