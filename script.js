@@ -3,20 +3,20 @@
    ═══════════════════════════════════════════ */
 
 /* ── Tema değiştirici ── */
-const html         = document.documentElement;
-const themeToggle  = document.getElementById('themeToggle');
-const themeIcon    = themeToggle.querySelector('.theme-icon');
+const html        = document.documentElement;
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon   = themeToggle?.querySelector('.theme-icon');
 
 let darkMode = localStorage.getItem('arisel-tema') !== 'aydinlik';
 
 function applyTheme() {
     html.setAttribute('data-theme', darkMode ? 'dark' : 'light');
-    themeIcon.textContent = darkMode ? '☀️' : '🌙';
+    if (themeIcon) themeIcon.textContent = darkMode ? '☀️' : '🌙';
     localStorage.setItem('arisel-tema', darkMode ? 'karanlik' : 'aydinlik');
 }
 applyTheme();
 
-themeToggle.addEventListener('click', () => {
+themeToggle?.addEventListener('click', () => {
     darkMode = !darkMode;
     applyTheme();
 });
@@ -25,32 +25,33 @@ themeToggle.addEventListener('click', () => {
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
 
-hamburger.addEventListener('click', () => {
+hamburger?.addEventListener('click', () => {
     hamburger.classList.toggle('open');
-    navLinks.classList.toggle('open');
+    navLinks?.classList.toggle('open');
 });
 
-navLinks.querySelectorAll('a').forEach(link => {
+navLinks?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navLinks.classList.remove('open');
+        hamburger?.classList.remove('open');
+        navLinks?.classList.remove('open');
     });
 });
 
 /* ── Navbar scroll efekti ── */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 48);
+    navbar?.classList.toggle('scrolled', window.scrollY > 48);
 }, { passive: true });
 
 /* ── Yazı animasyonu (Typing Effect) ── */
 const yazilar = [
     'whoami',
-    'Bilgisayar Mühendisi',
-    'AI Meraklısı',
-    'Dünya Gezgini',
-    'Hayalci',
-    'Yazılım Geliştirici'
+    'öğreniyorum',
+    'büyüyorum',
+    'kod yazıyorum',
+    'hayal kuruyorum',
+    'keşfediyorum',
+    'inşa ediyorum'
 ];
 
 let yaziIndex   = 0;
@@ -66,7 +67,7 @@ function yazEfekti() {
         karakterIdx++;
         if (karakterIdx === metin.length) {
             siliyor = true;
-            setTimeout(yazEfekti, 2000);
+            setTimeout(yazEfekti, 2200);
             return;
         }
     } else {
@@ -78,11 +79,11 @@ function yazEfekti() {
         }
     }
 
-    setTimeout(yazEfekti, siliyor ? 55 : 95);
+    setTimeout(yazEfekti, siliyor ? 50 : 90);
 }
 
-/* Boot animasyonu bittikten sonra yazı efektini başlat */
-setTimeout(yazEfekti, 2600);
+/* Boot animasyonu bittikten sonra yazı efektini başlat (sadece index.html) */
+if (yaziEl) setTimeout(yazEfekti, 2600);
 
 /* ── Scroll reveal (Intersection Observer) ── */
 const revealObserver = new IntersectionObserver((entries) => {
@@ -90,11 +91,11 @@ const revealObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             setTimeout(() => {
                 entry.target.classList.add('visible');
-            }, i * 75);
+            }, i * 70);
             revealObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
@@ -121,13 +122,11 @@ document.querySelectorAll('.acc-trigger').forEach(trigger => {
         const item   = trigger.closest('.acc-item');
         const acikMi = item.classList.contains('open');
 
-        /* Açık olanı kapat */
         document.querySelectorAll('.acc-item.open').forEach(ac => {
             ac.classList.remove('open');
             ac.querySelector('.acc-trigger').setAttribute('aria-expanded', 'false');
         });
 
-        /* Tıklanan kapalıysa aç */
         if (!acikMi) {
             item.classList.add('open');
             trigger.setAttribute('aria-expanded', 'true');
@@ -174,7 +173,7 @@ const navObserver = new IntersectionObserver((entries) => {
             if (aktif) aktif.classList.add('active');
         }
     });
-}, { threshold: 0.45 });
+}, { threshold: 0.4 });
 
 bolumler.forEach(b => navObserver.observe(b));
 
@@ -182,22 +181,22 @@ bolumler.forEach(b => navObserver.observe(b));
 document.querySelectorAll('.glass-card').forEach(kart => {
     kart.addEventListener('mousemove', (e) => {
         const r = kart.getBoundingClientRect();
-        const x = ((e.clientX - r.left) / r.width  - 0.5) * 6;
-        const y = ((e.clientY - r.top)  / r.height - 0.5) * 6;
-        kart.style.transform = `perspective(600px) rotateY(${x}deg) rotateX(${-y}deg) translateY(-4px)`;
+        const x = ((e.clientX - r.left) / r.width  - 0.5) * 5;
+        const y = ((e.clientY - r.top)  / r.height - 0.5) * 5;
+        kart.style.transform = `perspective(700px) rotateY(${x}deg) rotateX(${-y}deg) translateY(-3px)`;
     });
     kart.addEventListener('mouseleave', () => {
         kart.style.transform = '';
     });
 });
 
-/* ── Düzgün kaydırma (smooth scroll) — eski tarayıcı desteği ── */
+/* ── Düzgün kaydırma (smooth scroll) ── */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
         const hedef = document.querySelector(link.getAttribute('href'));
         if (!hedef) return;
         e.preventDefault();
-        const offset = hedef.getBoundingClientRect().top + window.scrollY - 72;
+        const offset = hedef.getBoundingClientRect().top + window.scrollY - 76;
         window.scrollTo({ top: offset, behavior: 'smooth' });
     });
 });
